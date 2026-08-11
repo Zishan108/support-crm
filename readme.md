@@ -1,10 +1,10 @@
 # Support CRM
 
-A full-stack customer support ticketing system built for the Datastraw AI + Tech Intern assessment.
+A full-stack customer support ticketing system built for the Datastraw AI + Tech
 
 ## Live Demo
-- **App:** [add your Render URL here once deployed]
-- **API Docs:** [Render URL]/docs
+- **App:** [https://support-crm-k68j.onrender.com/]
+- **API Docs:** [https://support-crm-k68j.onrender.com/docs]
 
 ## Tech Stack
 - **Backend:** FastAPI (Python)
@@ -45,7 +45,7 @@ support-crm/
 
 1. Clone the repo and enter the folder:
 \```bash
-git clone <your-repo-url>
+git clone [https://github.com/Zishan108/support-crm]
 cd support-crm
 \```
 
