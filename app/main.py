@@ -8,11 +8,15 @@ from sqlalchemy import or_
 from typing import Optional
 
 from . import models, schemas
-from .database import engine, get_db
+from .database import engine, get_db, SessionLocal
+from .seed import seed_if_empty
 
 # Creates the actual tables in support_crm.db if they don't exist yet.
 # This runs once, when the app starts.
 models.Base.metadata.create_all(bind=engine)
+
+with SessionLocal() as _seed_db:
+    seed_if_empty(_seed_db)
 
 app = FastAPI(title="Support CRM")
 
