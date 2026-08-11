@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ticket Detail - Support CRM</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-brand">
+  <span class="eyebrow">Datastraw</span>
+  <h1>Support CRM</h1>
+</div>
+    <a href="/" class="btn-secondary">&larr; Back to tickets</a>
+  </header>
+
+  <main class="container narrow" id="ticketDetail" data-ticket-id="{{ ticket_id }}">
+    <!-- Filled in dynamically by script.js -->
+    <p>Loading ticket...</p>
+  </main>
+
+  <script src="/static/script.js"></script>
+  <script>
+    // Loads the ticket's data using the ID embedded in the URL
+    loadTicketDetail();
+  </script>
+</body>
+</html>

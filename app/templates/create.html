@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New Ticket - Support CRM</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-brand">
+  <span class="eyebrow">Datastraw</span>
+  <h1>Support CRM</h1>
+</div>
+    <a href="/" class="btn-secondary">&larr; Back to tickets</a>
+  </header>
+
+  <main class="container narrow">
+    <h2>Create New Ticket</h2>
+
+    <form id="createTicketForm">
+      <label for="customer_name">Customer Name</label>
+      <input type="text" id="customer_name" name="customer_name" required />
+
+      <label for="customer_email">Customer Email</label>
+      <input type="email" id="customer_email" name="customer_email" required />
+
+      <label for="subject">Issue Title</label>
+      <input type="text" id="subject" name="subject" required />
+
+      <label for="description">Description</label>
+      <textarea id="description" name="description" rows="5" required></textarea>
+
+      <button type="submit" class="btn-primary">Create Ticket</button>
+    </form>
+
+    <p id="formError" class="error-text" style="display:none;"></p>
+  </main>
+
+  <script src="/static/script.js"></script>
+  <script>
+    // Wires up the submit handler defined in script.js
+    setupCreateForm();
+  </script>
+</body>
+</html>
